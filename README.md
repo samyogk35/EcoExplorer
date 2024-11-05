@@ -1,8 +1,8 @@
-# AI Trip Planner
+# Ecoexplorer
 
 ## Overview
 
-AI Trip Planner is a sophisticated web application that helps users plan their trips using artificial intelligence. The app leverages Google's OAuth 2.0 for secure authentication, providing a seamless and trustworthy user experience.
+Ecoexplorer is a web application that helps users plan their trips using AI. The app leverages Google's OAuth 2.0 for secure authentication, providing a seamless and trustworthy user experience.
 
 ## Features
 
