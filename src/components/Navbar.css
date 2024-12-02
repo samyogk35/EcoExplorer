@@ -1,0 +1,80 @@
+.navbar-custom {
+  background-color: white;
+  border-bottom: 1px solid var(--accent-green);
+  box-shadow: 0 2px 4px rgba(46, 125, 50, 0.1);
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  color: var(--primary-green) !important;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  margin-left: 2rem;
+}
+
+.nav-link-custom {
+  color: var(--primary-green) !important;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link-custom:hover {
+  color: var(--dark-green) !important;
+}
+
+.auth-section {
+  margin-left: auto;
+}
+
+.user-email {
+  color: #666666;
+  font-size: 0.9rem;
+}
+
+.btn-logout {
+  background-color: white;
+  color: var(--primary-green);
+  border: 1px solid var(--primary-green);
+  padding: 0.375rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-logout:hover {
+  background-color: var(--primary-green);
+  color: white;
+}
+
+.btn-signup {
+  background-color: var(--primary-green);
+  color: white;
+  padding: 0.375rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-signup:hover {
+  background-color: var(--dark-green);
+}

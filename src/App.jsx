@@ -1,18 +1,33 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Generate from "./pages/Generate";
+import SavedItineraries from "./pages/SavedItineraries";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import ProtectedRoute from "./components/ProtectedRoute";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { Button } from "./components/ui/button";
-import Hero from "./components/ui/custom/Hero";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      {/* hero */}
-      <Hero />
-    </>
+    <BrowserRouter>
+      <div className="app-wrapper">
+        <Navbar />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route element={<ProtectedRoute />}>
+              <Route path="/generate" element={<Generate />} />
+              <Route path="/saved" element={<SavedItineraries />} />
+            </Route>
+          </Routes>
+        </main>
+      </div>
+    </BrowserRouter>
   );
 }
 
