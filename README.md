@@ -15,42 +15,9 @@ Ecoexplorer is a web application that helps users plan their trips using AI. The
 
 - **Frontend**: React
 - **Styling**: TailwindCSS
-- **Backend**: Firebase
-- **Authentication**: Google OAuth 2.0
+- **Backend**: Firebase Database
+- **Authentication**: Firebase Authentication
 - **Language**: JavaScript
 - **AI Integration**: Gemini AI
 
-## Installation
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/ai-trip-planner.git
-cd ai-trip-planner
-```
-
-2. Install dependencies:
-
-```bash
-npm install
-```
-
-3. Set up environment variables: Create a .env file in the root directory and add your Firebase and Google OAuth credentials:
-
-```bash
-
-REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
-REACT_APP_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
-REACT_APP_FIREBASE_PROJECT_ID=your_firebase_project_id
-REACT_APP_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
-REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
-REACT_APP_FIREBASE_APP_ID=your_firebase_app_id
-REACT_APP_GOOGLE_CLIENT_ID=your_google_client_id
-REACT_APP_GEMINI_AI_API_KEY=your_gemini_ai_api_key
-```
-
-4. Run the development server:
-
-```bash
-npm start
-```
